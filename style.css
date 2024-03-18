@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181818;
+    color: #e7e7e7;
+    text-align: center;
+    padding: 0.5rem 0.25rem;
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p {
+    font-size: clamp(4.8373rem, 3.9283rem + 4.5448vi, 7.4506rem);
+    line-height: 0.9;
+}
+
+h1 {
+    font-size: clamp(6.9657rem, 5.3393rem + 8.1319vi, 11.6415rem);
+    text-transform: capitalize;
+    line-height: 0.8;
+}
+
+img {
+    /* position: absolute; */
+    /* bottom: 10px; */
+    /* right: 10px; */
+    margin-left: 50%;
+    width: 40vw;
+    max-width: 50vh;
+}
