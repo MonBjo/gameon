@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,17 +7,30 @@
 }
 
 body {
-    background-color: #181818;
+    background-color: black;
+    font-family: "Jost", sans-serif;
     color: #e7e7e7;
     text-align: center;
     padding: 0.5rem 0.25rem;
     width: 100vw;
-    height: 100vh;
-    
+    height: 100%;
+    min-height: 100dvh;
+    /* min-height: -webkit-fill-available; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    * {
+        margin: 1rem;
+    }
 }
 
 p {
@@ -25,15 +40,13 @@ p {
 
 h1 {
     font-size: clamp(6.9657rem, 5.3393rem + 8.1319vi, 11.6415rem);
-    text-transform: capitalize;
+    text-transform: uppercase;
+    font-weight: normal;
     line-height: 0.8;
 }
 
 img {
-    /* position: absolute; */
-    /* bottom: 10px; */
-    /* right: 10px; */
-    margin-left: 50%;
+    align-self: flex-end;
     width: 40vw;
     max-width: 50vh;
 }
